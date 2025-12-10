@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumentasi Terbang Laro Pasuruan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Dokumentasi Budaya Lokal: Terbang Laro Pasuruan</h1>
+<p>Warisan permainan tradisional khas Pasuruan</p>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</header>
+
+<nav>
+<ul>
+<li><a href="#sejarah">Sejarah</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<section id="sejarah" class="container">
+<h2>Sejarah Terbang Laro</h2>
+<p>Terbang Laro adalah permainan tradisional khas Pasuruan yang dimainkan anak-anak dengan irama rebana. 
+Permainan ini melatih keberanian, ketangkasan, dan kekompakan. Budaya ini menjadi simbol kebersamaan di masyarakat Pasuruan.</p>
+<img src="foto1.jpeg" alt="Terbang Laro" class="main-photo">
+</section>
+
+<section id="galeri" class="container">
+<h2>Galeri Foto</h2>
+<div class="gallery-slider">
+<img src="foto1.jpeg" alt="Terbang Laro 1" class="slide" onclick="openLightbox(this)">
+<img src="foto2.jpeg" alt="Terbang Laro 2" class="slide" onclick="openLightbox(this)">
+<img src="foto3.jpeg" alt="Terbang Laro 3" class="slide" onclick="openLightbox(this)">
+</div>
+</section>
+
+<section id="video" class="container">
+<h2>Video Dokumentasi</h2>
+<div class="video-box"><iframe width="560" height="315" src="https://www.youtube.com/embed/eLSs5yPBk3o?si=mS4YE3RpiuIx5SXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<video controls>
+<source src='https://youtu.be/CoawGNSXZ-c?si=blvhdo5eF3hsDXIY'
+Browser Anda tidak mendukung video.
+</video>
+</div>
+</section>
+
+<footer id="kontak">
+<p>Website Dokumentasi Terbang Laro Pasuruan • Pelestarian Budaya Lokal</p>
+<button id="infoBtn">Klik untuk Info Singkat</button>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img" src="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
